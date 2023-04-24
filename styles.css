@@ -209,18 +209,18 @@ html {
 .container-banners #prev, 
 .container-banners #next {
   position: absolute;
-  top:50%;
+  top:90%;
   transform: translateY(-50%);
   color: #ffffff;
-  background: #da87c9;
-  height: 50px;
-  width: 50px;
+  background: #c787dad3;
+  height: 44px;
+  width: 31px;
   line-height: 50px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
   font-weight: bolder;
-  border-radius: 50px;
+  border-radius: 60px;
 }
 
 .container-banners #prev:hover, 
@@ -228,7 +228,7 @@ html {
   background: #a355d761;
 }
 .container-banners #prev{
-  left: 20px;
+  left: 51px;
 }
 
 .container-banners #next{
