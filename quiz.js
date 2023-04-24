@@ -10,64 +10,64 @@ let actualQuestion = 0;
 // Perguntas
 const questions = [
   {
-    "question": "PHP foi desenvolvido para qual fim?",
+    "question": "",
     "answers": [
       {
-        "answer": "back-end",
+        "answer": "",
         "correct": true
       },
       {
-        "answer": "front-end",
+        "answer": "",
         "correct": false
       },
       {
-        "answer": "Sistema operacional",
+        "answer": "",
         "correct": false
       },
       {
-        "answer": "Banco de dados",
+        "answer": "",
         "correct": false
       },
     ]
   },
   {
-    "question": "Uma forma de declarar variável em JavaScript:",
+    "question": ":",
     "answers": [
       {
         "answer": "$var",
         "correct": false
       },
       {
-        "answer": "var",
+        "answer": "",
         "correct": true
       },
       {
-        "answer": "@var",
+        "answer": "",
         "correct": false
       },
       {
-        "answer": "#let",
+        "answer": "",
         "correct": false
       },
     ]
   },
   {
-    "question": "Qual o seletor de id no CSS?",
+    "question": "",
     "answers": [
       {
-        "answer": "#",
+        "answer": "",
         "correct": true
       },
       {
-        "answer": ".",
+        "answer": "",
         "correct": false
       },
       {
-        "answer": "@",
+        "answer": "",
         "correct": false
       },
       {
-        "answer": "/",
+        "answer": "",
         "correct": false
       },
     ]
