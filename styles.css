@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@200;300&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* menu lateral e bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  bottom: -2;
+  left: 0;
+  width: 100%;
+  font-family: "Lora";
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: #08021de1;
+  padding: 16px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Estilos para o menu lateral */
+.sidebar {
+  padding: 2px;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 209px;
+  height: 100%;
+  background-color: #08021de1;
+  padding-top: 60px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.content {
+  padding: 7px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar li a:hover {
+  background-color: #92a1cd;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 9px;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* Estilos para abrir e fechar o menu */
+.menu-open {
+  transform: translateX(300px);
+  cursor: pointer;
+  position: fixed;
+}
+
+.menu-close {
+  transform: translateX(0);
+  cursor: pointer;
+  background-color: #92a1cd;
+}
+
+.fatec-linguo {
+  border: 2px solid rgb(142, 3, 3);
+  margin: 5px;
+  padding: 1.5em;
+}
+
+.container-banners {
+  margin-top: -3px;
+  margin-bottom: 3px;
+  padding-top: 50px;
+  padding-bottom: 23px;
+}
+
+.container-banners .slide-container .slide {
+  width: 400px;
+  height: 218px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 9%;
+  padding-bottom: 100px;
+  margin-top: 2px;
+}
+
+.container-banners .slide-container .slide .content-slide {
+  flex: 1 1 350px;
+  animation: slideContent 0.4s linear 0.4s backwards;
+}
+
+@keyframes slideContent {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+
+.container-banners .slide-container .slide .content-slide .btn-slide {
+  margin-top: 10px;
+  display: inline-block;
+  background: rgb(255, 168, 243);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 9px 40px;
+  border-radius: 5px;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+}
+
+.container-banners .slide-container .slide .content-slide .btn-slide:hover{
+  background: rgba(254, 124, 213, 0.45);
+  border: 2px solid #d46dc6;
+  color: #ffffff;
+}
+
+.container-banners .slide-container{
+  display: none;
+}
+
+.container-banners .slide-container.active{
+  display: block;
+}
+.container-banners .slide-container .slide .banner1 {   
+      z-index: 1;
+      position: absolute; 
+      right: 0; 
+      min-width: 100%; 
+      min-height: 100%;
+      width: 100vw; 
+      height: auto; 
+      z-index: -1000;
+      /* background: url(img/Seja\ bem-vindo\,\ Fateco\ \(a\)\ \(1\).gif) no-repeat;
+      background-size: cover; 
+   */
+}
+.banner1 .banner2 .banner3 {
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 100%;
+  min-height: 50%;
+  width: 50%;
+  height: 200px;
+}
+
+.container-banners .slide-container:nth-child(1) .slide{
+  background: url(img/banner1.gif);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 70vh;
+}
+
+
+.container-banners .slide-container:nth-child(2) .slide{
+  background: url(img/banner2.gif);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.container-banners .slide-container:nth-child(3) .slide{
+  background: url(img/banner3.gif);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.container-banners #prev, 
+.container-banners #next {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  background: #da87c9;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 50px;
+}
+
+.container-banners #prev:hover, 
+.container-banners #next:hover{
+  background: #a355d761;
+}
+.container-banners #prev{
+  left: 20px;
+}
+
+.container-banners #next{
+  right: 20px;
+}
+
+@media(max-width: 500px){
+  .container-banners #prev{
+      left: 0px;
+      top: 60%;
+  }
+
+  .container-banners #next{
+      right: 0px;
+      top: 60%;
+  }
+
+  .container-banners .slide-container .slide .content-slide p{
+      font-size: 16px;
+      color: #ffffff;
+      font-family: 'Noto Sans', sans-serif;
+      width: 70%;
+      height: 10%;
+  
+  }
+}
+
+
+/*estilo para vídeos de slides do canvas*/
+.slides-canvas .max-width{
+  width: 100%;
+  margin-bottom: 0;
+  height: 100%;
+}
+.slides-canvas video{
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para os botões de navegação */
+.nav-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #120949e7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: #ace7ae;
+}
+
+header {
+  background-color: rgba(255, 192, 203, 0.663);
+}
+
+/*banner*/
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#container-semestre {
+  font-size: 20px;
+  margin-top: -20px;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+/* QUANDO FOR MEXER EM REVISAO, MAS LEMBRE-SE QUE ALTERA O BOX DO INICIO */
+/* para mexer e alinhar os box de semestre, as imagens parecem no obedecer, mas tem jeito */
+
+#first,
+#second,
+#third,
+#four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 50px;
+  border: 2px solid #333;
+  background-color: #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #333;
+}
+
+#first:hover,
+#second:hover,
+#third:hover,
+#four:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* para mexer no tamanho dos titulos da página inicial, pq se for em revisao você terá que aumentar o nome do id ou class para batata-revisao*/
+#first h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#second h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#third h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#four h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#first img,
+#second img,
+#third img,
+#four img {
+  width: 80%;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px #333;
+  margin-bottom: 2px;
+}
+
+/*PARTE DOS SEMESTRES*/
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+/* para mexer e alinhar os box de semestre, as imagens parecem no obedecer, mas tem jeito */
+#first,
+#second,
+#third,
+#four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 50px;
+  border: 2px solid #333;
+  background-color: #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #333;
+}
+
+#first:hover,
+#second:hover,
+#third:hover,
+#four:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* para mexer no tamanho dos titulos */
+#first h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#second h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#third h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#four h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+#first img,
+#second img,
+#third img,
+#four img {
+  width: 80%;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px #333;
+  margin-bottom: 2px;
+}
+
+
+/* SOMENTE PARA A PAGINA DE REVISAO */
+#container-revisao{
+  font-size: 20px;
+  margin-top: -20px;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 20px;
+
+}
+
+footer:hover {
+  color: white;
+}

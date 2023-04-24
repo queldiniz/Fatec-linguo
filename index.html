@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fatec Linguo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-6 align-self-center text-center">
+            <div id="container">
+                <nav class="navbar">
+                    <a class="fatec-linguo"><b>FATEC</b>Linguo</a>
+                </nav>
+            </div>
+
+            <div class="sidebar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="revisao.html">Revisão</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a class="close-menu">Fechar</a></li>
+                    <!--botao para acessar o menu-->
+                    <button class="menu-toggle">&#9776;</button>
+                </ul>
+            </div>
+
+
+            <!-- banners -->
+            <section class="container-banners">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center text-center">
+                            <!--primeiro banner-->
+                            <div class="slide-container active">
+                                <div class="slide banner">
+                                    <div class="content-slide"></div>
+                                </div>
+                            </div>
+
+                            <!--segundo banner-->
+                            <div class="slide-container">
+                                <div class="slide">
+                                    <div class="content-slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--terceiro banner-->
+                            <div class="slide-container">
+                                <div class="slide">
+                                    <div class="content-slide">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="prev" onclick="prev()">
+                                < </div>
+                                    <div id="next" onclick="next()"> > </div>
+                            </div>
+                        </div>
+
+            </section>
+
+            <header>
+                <div id="container-semestre">
+                    <div id="first">
+                        <h2>1º Semestre</h2>
+                        <img src="img/P1.jpg" alt="">
+                        <br><br>
+
+                    </div>
+                    <div id="second">
+                        <h2>2º Semestre</h2>
+                        <img src="img/2.jpg" alt="">
+                        <br><br>
+
+                    </div>
+                    <div id="third">
+                        <h2>3º Semestre</h2>
+                        <img src="img/3.jpg" alt="">
+                        <br><br>
+
+                    </div>
+                    <div id="four">
+                        <h2>4º Semestre</h2>
+                        <img src="img/4.jpg" alt="">
+                        <br><br>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Criado por: Rafaela Araujo, Raquel Diniz e Vinicius Pereira</p>
+            </footer>
+
+
+
+
+            <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+
+</html>
