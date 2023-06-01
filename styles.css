@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@200;300&family=Lora:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -26,15 +27,38 @@ html {
   padding: 16px;
 }
 
+
+.logout-button {
+  margin-top: -22px;
+  margin-bottom: -6px;
+  padding-left: 830px;
+  margin-left: 350px;
+  color: white;
+  font-size: 15px;
+}
+
+
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
   font-family:'Lora', monospace;
-  padding: 6px;
-  
- 
+  padding: 6px; 
 }
+
+.sair{
+  margin-left: 600px;
+  padding-left: 608px;
+  margin-bottom: 0px;
+  margin-top: -38px;
+  
+}
+
+/*BOTAO PARA SAIR*/
+#btnRedirect{
+  cursor: pointer;
+}
+
 span{
   font-size: 16px;
   font-family: 'Lora', Courier, monospace;
@@ -70,6 +94,8 @@ span{
 .sidebar li {
   margin-bottom: 10px;
 }
+
+
 
 .sidebar li a {
   display: block;
@@ -307,6 +333,7 @@ header {
 }
 
 #container-semestre {
+ 
   gap: 20px;
   padding-top: 60px;
   display: flex;
@@ -352,14 +379,17 @@ header {
   padding: 3px;
 }
 
+
 .first-paragraph{
-  font-size: 15px;
+  text-decoration: underline;
+  font-size: 18px;
   padding-top: 8px;
 }
 
 ul{
-  font-size: 15px;
-  padding-top: 4px;
+  margin-left: -33px;
+  font-size: 18px;
+  padding-top: 12px;
 }
 
 #second h2 {
@@ -368,7 +398,8 @@ ul{
   padding: 3px;
 }
 .second-paragraph{
-  font-size: 15px;
+  text-decoration: underline;
+  font-size: 18px;
   padding-top: 8px;
 }
 
@@ -378,13 +409,15 @@ ul{
   padding: 3px;
 }
 .third-paragraph {
-  font-size: 15px;
+  text-decoration: underline;
+  font-size: 18px;
   padding-top: 8px;
 }
 
 
 .four-paragraph{
-  font-size: 15px;
+  text-decoration: underline;
+  font-size: 18px;
   padding-top: 8px;
 }
 
@@ -443,12 +476,11 @@ ul{
 
 #second h2 {
   font-size: 20px;
-  
   padding: 3px;
 }
 
 #third h3 {
-  
+  font-size: 20px;
   margin-bottom: 20px;
   
 }
@@ -477,14 +509,88 @@ ul{
 
 
 /* SOMENTE PARA A PAGINA DE REVISAO */
-#container-revisao{
-  font-size: 20px;
-  margin-top: -20px;
-  padding-top: 60px;
+#container-revisao {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
+  flex-direction: column;
+  margin-bottom: 4px;
+  padding-top: 56px;
+  padding-bottom: 10px;
+  margin-left: 9px;
+  margin-right: 10px;
+}
+
+.revisao-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*IMAGENS REVISAO SOMENTE*/
+.revisao-img1{
+  margin-left: 18px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 34px;
+}
+
+.revisao-img2{
+  margin-left: 18px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 24px;
+}
+
+.revisao-img3{
+  margin-left: 18px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 43px;
+}
+
+.revisao-img4{
+  margin-left: 18px;
+  width: 200px;
+  
+  height: auto;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 43px;
+}
+
+
+
+
+
+
+.revisao-item .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.revisao-item p {
+  text-align: justify;
+  padding: 1px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  padding: 33px;
+  margin: 25px;
+}
+
+.revisao-item .nav-btn {
+  margin-top: 10px;
 }
 
 footer {
@@ -499,4 +605,58 @@ footer {
 
 footer:hover {
   color: white;
+}
+
+
+
+/*PAGINA DE CRÉDITOS*/
+.quem-somos{
+  align-items: center;
+  margin: 73px 50px 50px 111px;
+  padding: 20px;
+ 
+  background-color: rgba(255, 192, 203, 0.663);
+  border-radius: 10px;
+  width: fit-content;
+  
+}
+
+.quem-somos h1{
+  font-family: 'Lora';
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+  
+}
+.quem-somos h2{
+  font-family: 'Poppins';
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  justify-content: space-between;
+
+}
+.quem-somos p{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: -2px;
+}
+.quem-somos .paragrafo-destaque{
+ padding-top: 35px;
+  font-size: 22px;
+  font-family: 'Lora';
+  margin-bottom: -25px;
+}
+
+.quem-somos a{
+  color: rgb(237, 20, 205);
+  transition: color 0.3s ease;
+  display: inline-block;
+  
+}
+
+.quem-somos a:hover{
+  color: #c55c1a;
+  transition: color 0.3s ease;
 }
