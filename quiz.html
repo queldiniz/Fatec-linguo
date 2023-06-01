@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Quizz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylequiz.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
-        <nav class="navbar">
-            <a class="fatec-linguo"><b>FATEC</b>Linguo</a>
-        </nav>
+      <nav class="navbar">
+          <a class="fatec-linguo">Fatec<span>Linguo</span></a>
+          <div class="logout-button">
+            <a href="login.html">sair</a>
+        </div>
+      </nav>
+  </div>
 </div>
 
 <div class="sidebar">
@@ -21,6 +24,7 @@
       <li><a href="index.html">Inicio</a></li>
       <li><a href="revisao.html">Revisão</a></li>
       <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="creditos.html">Créditos</a></li>
       <li><a class="close-menu">Fechar</a></li>
       <!--botao para acessar o menu-->
     <button class="menu-toggle">&#9776;</button>
@@ -29,26 +33,28 @@
     
    <h1>QUIZZ</h1>
    <div id="score-container" class="hide">
-    <h2>Parabéns</h2>
-    <p id="display-score"><span>90</span>%</p>
-    <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span> perguntas</p>
+    <h2>Parabéns!</h2>
+    <p id="display-score"><span></span>%</p>
+    <p>Você acertou<span id="correct-answers">0</span> de <span id="questions-qty"></span> perguntas</p>
     <button id="restart">Refazer quizz!</button>
   </div>
+
+  
   <!-- QUIZZ CONTAINER -->
   <div id="quizz-container">
     <p id="question">
-      <span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para metros?</span>
+      <span id="question-number"></span> - <span id="question-text"></span>
     </p>
     <div id="answers-box">
-      <button><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
-      <button><span class="btn-letter">b</span> <span class="question-answer">km</span></button>
-      <button><span class="btn-letter">c</span> <span class="question-answer">ms</span></button>
-      <button><span class="btn-letter">d</span> <span class="question-answer">hm</span></button>
+      <button><span class="btn-letter">a</span> <span class="question-answer"></span></button>
+      <button><span class="btn-letter">b</span> <span class="question-answer"></span></button>
+      <button><span class="btn-letter">c</span> <span class="question-answer"></span></button>
+      <button><span class="btn-letter">d</span> <span class="question-answer"></span></button>
     </div>
   </div>
 
   <!-- template resposta -->
-  <button class="answer-template hide"><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+  <button class="answer-template hide"><span class="btn-letter"></span> <span class="question-answer"></span></button>
 
 
  <!-- Footer -->
