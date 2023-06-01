@@ -10,64 +10,85 @@ let actualQuestion = 0;
 // Perguntas
 const questions = [
   {
-    "question": "",
+    "question": "Which sentence is a proper way to introduce yourself to someone?  ",
     "answers": [
       {
-        "answer": "",
+        "answer": "Hi, my name is Sarah. Nice to meet you.",
         "correct": true
       },
       {
-        "answer": "",
+        "answer": "Hello, my name is book.",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "How are you doing?",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "What is your name?",
         "correct": false
       },
     ]
   },
   {
-    "question": ":",
+    "question": "What is the correct interrogative form of: She is from France."  ,
     "answers": [
       {
-        "answer": "$var",
+        "answer": "Are we from France? ",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "Is she from France?",
         "correct": true
       },
       {
-        "answer": "",
+        "answer": "Are they from France?",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "Am I from France?",
         "correct": false
       },
     ]
   },
   {
-    "question": "",
+    "question": "What time is it if it's: quarter past eight?",
     "answers": [
       {
-        "answer": "",
+        "answer": "8:15",
         "correct": true
       },
       {
-        "answer": "",
+        "answer": "7:15",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "8:45",
         "correct": false
       },
       {
-        "answer": "",
+        "answer": "7:45",
+        "correct": false
+      },
+    ]
+  },
+  {
+    "question": "What verb means: to do the dishes? ",
+    "answers": [
+      {
+        "answer": "cook ",
+        "correct": false
+      },
+      {
+        "answer": "eat ",
+        "correct": false
+      },
+      {
+        "answer": "wash ",
+        "correct": true
+      },
+      {
+        "answer": "clean",
         "correct": false
       },
     ]
