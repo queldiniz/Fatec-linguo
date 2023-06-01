@@ -57,6 +57,8 @@ html {
 /*BOTAO PARA SAIR*/
 #btnRedirect{
   cursor: pointer;
+  image-rendering: auto;
+  margin-left: 314px;
 }
 
 /*Botao saiba mais*/
