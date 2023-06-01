@@ -9,3 +9,5 @@
 <img src="abarevisao.png"><br><br>
 <img src="abaquiz.png"><br><br>
 <img src="quizacerto.png"><br><br>
+<img src="creditos.png"><br><br>
+
